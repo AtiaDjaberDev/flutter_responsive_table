@@ -191,7 +191,7 @@ class _ResponsiveDatatableState extends State<ResponsiveDatatable> {
                     .toList()
                     .map(
                       (header) => Container(
-                        padding: const EdgeInsets.all(11),
+                        padding: const EdgeInsets.all(4),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -281,7 +281,7 @@ class _ResponsiveDatatableState extends State<ResponsiveDatatable> {
                       child: header.headerBuilder != null
                           ? header.headerBuilder!(header.value)
                           : Container(
-                              padding: const EdgeInsets.all(11),
+                              padding: const EdgeInsets.all(4),
                               alignment: headerAlignSwitch(header.textAlign),
                               child: Wrap(
                                 crossAxisAlignment: WrapCrossAlignment.center,
@@ -327,7 +327,7 @@ class _ResponsiveDatatableState extends State<ResponsiveDatatable> {
               });
             },
             child: Container(
-              padding: EdgeInsets.all(widget.showSelect ? 0 : 11),
+              padding: EdgeInsets.all(widget.showSelect ? 0 : 4),
 
               /// TODO:
               decoration: widget.selecteds!.contains(data)
@@ -401,7 +401,7 @@ class _ResponsiveDatatableState extends State<ResponsiveDatatable> {
               /// title and actions
               if (widget.title != null || widget.actions != null)
                 Container(
-                  padding: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(4),
                   decoration: BoxDecoration(
                       border:
                           Border(bottom: BorderSide(color: Colors.grey[300]!))),
@@ -454,7 +454,7 @@ class _ResponsiveDatatableState extends State<ResponsiveDatatable> {
               //title and actions
               if (widget.title != null || widget.actions != null)
                 Container(
-                  padding: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(4),
                   decoration: BoxDecoration(
                       border:
                           Border(bottom: BorderSide(color: Colors.grey[300]!))),
